@@ -1,0 +1,4 @@
+-----
+title: "Wedding Cakes"
+gallery: "wedding"
+-----

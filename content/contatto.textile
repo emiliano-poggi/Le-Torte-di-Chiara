@@ -1,0 +1,8 @@
+-----
+title: "Come contattarmi"
+-----
+<img class="center" src="/images/confetti.jpg" alt="Le torte di Chiara"/>
+
+p(center). Email: info@letortedichiara.com
+
+p(center). Telefono: 0039 - 3478234442

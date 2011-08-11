@@ -1,0 +1,34 @@
+#!/usr/bin/env ruby
+
+compile /\/(styles|sources|images|galleriffic|creazioni)\/*\// do
+end
+
+compile  /\/(allestimenti|biscotti_e_mini_cakes|cake_topper|confetti_decorati|eventi|fashion|wedding)\// do
+	filter :erb
+	filter :redcloth
+	layout 'gallery'
+end
+
+compile '/*/' do
+  filter :erb
+	filter :redcloth
+  layout 'default'
+end
+
+##########
+## routing
+##########
+
+route '/home/' do
+	'/index.html'
+end
+
+route /\/(styles|sources|images|galleriffic|creazioni)\// do
+	item.identifier.chop + ".#{item[:extension]}"
+end
+
+route '*' do
+  item.identifier + 'index.html'
+end
+
+layout '*', :erb
