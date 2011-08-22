@@ -1,0 +1,102 @@
+@import url('text.css');
+@import url('colors.css');
+@import url('navigation.css');
+
+body {
+	margin:0;
+	padding:0;
+}
+
+#Logo
+{
+	margin: 0 auto 0 auto;
+	width:720px;
+	height:120px;
+}
+
+#Logo .picture
+{
+	position:relative;
+	width:720px;
+	height:120px;
+	top:0px;
+	left:0px;
+}
+
+#headerTitle
+{
+position:relative;
+top:0px;
+left:0px;
+}
+
+#headerTitle img {
+	display:block;
+	margin-top:5px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#headerSubtext
+{
+	position:relative;
+	top:30px;
+	left:50px;
+}
+
+.contentBox
+{
+	margin:0 auto 0 auto;
+	width:720px;
+}
+
+.contentBox .innerBox
+{
+	margin-bottom:10px;
+	margin-top:10px;
+	width:690px;
+	overflow:hidden;
+}
+
+.contentTitle
+{
+	margin-bottom:20px;
+	padding-top:0px;
+	margin-left:15px;
+	margin-top:10px;
+}
+
+.contentText
+{
+	margin-left:13px;
+	margin-right:13px;
+	line-height:30px;
+}
+
+.contentText img.wrap
+{
+	float: right;
+	margin: 0 0 .5em 1em;
+}
+
+.contentText .center
+{
+	display:block;
+	margin:0 auto 0 auto;
+}
+
+.contentText p.center {
+	text-align:center;
+}
+
+div.footer {
+	clear:both;
+	position:relative;
+	margin: auto 0 auto 0;
+	}
+
+.footer p {
+	text-align:center;
+	font-family: "lucida grande",tahoma,verdana,arial,sans-serif;}
+
+.icon img {border:none;}
