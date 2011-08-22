@@ -24,9 +24,6 @@ namespace :site do
 	task :ghpages => [:compile_ghpages] do
 		sh 'bin/git-domain.sh'
 		sh 'bin/git-ghpages.sh'
-		# git
-		# cp
-		# git
 	end
 	
 	desc "Generate letortedichiara.com output"
