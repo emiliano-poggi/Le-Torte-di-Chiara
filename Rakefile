@@ -22,6 +22,7 @@ namespace :site do
 
 	desc "Update gh-pages repo"
 	task :ghpages => [:compile_ghpages] do
+		sh 'bin/git-ghpages.sh'
 		# git
 		# cp
 		# git
