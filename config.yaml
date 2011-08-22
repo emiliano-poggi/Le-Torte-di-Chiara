@@ -7,8 +7,8 @@ data_sources:
     allow_periods_in_identifiers: true
   layouts_root: /
   type: filesystem_unified
-site_root: /Le-Torte-di-Chiara/
-output_dir: ../Le-Torte-di-Chiara-output-ghpages
+output_dir: ../Le-Torte-di-Chiara-output
+site_root: /
 text_extensions: 
 - css
 - erb
