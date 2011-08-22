@@ -15,7 +15,8 @@ namespace :site do
 	
 	desc "Update master repo and domain"
 	task :domain => [:compile_domain] do
-		# git repo
+		# import images
+		sh 'bin/git-domain.sh'
 		# ftp output copy
 	end
 
