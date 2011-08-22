@@ -29,12 +29,14 @@ namespace :site do
 	desc "Generate letortedichiara.com output"
 	task :compile_domain do
 		config '/', '../Le-Torte-di-Chiara-output'
+		puts "\n>>Compiling domain site..."
 		sh 'nanoc3 compile'
 	end
 
 	desc "Generate empo.github.com/Le-Torte-di-Chiara output"
 	task :compile_ghpages do
 		config '/Le-Torte-di-Chiara/', '../Le-Torte-di-Chiara-output-ghpages'
+		puts "\n>> Compiling ghpages site..."
 		sh 'nanoc3 compile'
 	end
 
