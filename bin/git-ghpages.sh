@@ -5,8 +5,10 @@ if [ "$?" -eq "0" ]; then
 	echo "Copying files from output gh-pages..."
 	cp -r ../Le-Torte-di-Chiara-output-ghpages/* ./
 	echo "Synch repo..."
+	git status
 	git add .
   git commit -a -m 'Update project'
+	git status
   git push origin gh-pages
 	git checkout master	
 	exit 0
