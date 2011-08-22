@@ -23,7 +23,7 @@ namespace :project do
 
 	desc "Update gh-pages repo"
 	task :ghpages => [:compile_ghpages] do
-		puts "\n#### UPDATE GHPAGES ####"
+		puts "\n#### UPDATE GH-PAGES ####"
 		puts "\n-->> Synch config.yaml on master..."
 		sh 'bin/git-domain.sh'
 		puts "\n-->> Update ghpages..."
