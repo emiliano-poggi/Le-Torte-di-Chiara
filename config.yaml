@@ -1,5 +1,14 @@
 --- 
-output_dir: output-ghpages
+index_filenames: 
+- index.html
+data_sources: 
+- items_root: /
+  config: 
+    allow_periods_in_identifiers: true
+  layouts_root: /
+  type: filesystem_unified
+output_dir: ../Le-Torte-di-Chiara-output-ghpages
+site_root: /Le-Torte-di-Chiara/
 text_extensions: 
 - css
 - erb
@@ -18,13 +27,4 @@ text_extensions:
 - xhtml
 - xml
 - textile
-data_sources: 
-- items_root: /
-  config: 
-    allow_periods_in_identifiers: true
-  layouts_root: /
-  type: filesystem_unified
 enable_output_diff: false
-site_root: /Le-Torte-di-Chiara/
-index_filenames: 
-- index.html

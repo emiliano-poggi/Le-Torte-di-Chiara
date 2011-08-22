@@ -21,7 +21,7 @@ namespace :site do
 
 	desc "Generate empo.github.com/Le-Torte-di-Chiara output"
 	task :git do
-		config '/Le-Torte-di-Chiara/', "output-ghpages"
+		config '/Le-Torte-di-Chiara/', "../Le-Torte-di-Chiara-output-ghpages"
 		sh 'nanoc3 compile'
 	end
 
