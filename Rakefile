@@ -1,7 +1,7 @@
 require 'rubygems'
 require 'nanoc3/tasks'
 
-namespace :site do
+namespace :project do
 
 	def config root, output='output'
 		conf = YAML.load_file('config.yaml')
@@ -23,16 +23,16 @@ namespace :site do
 
 	desc "Update gh-pages repo"
 	task :ghpages => [:compile_ghpages] do
-		puts "\n Synch config.yaml on master..."
+		puts "\n-->> Synch config.yaml on master..."
 		sh 'bin/git-domain.sh'
-		puts "\n--> Update ghpages..."
+		puts "\n-->> Update ghpages..."
 		sh 'bin/git-ghpages.sh'
 	end
 	
 	desc "Generate letortedichiara.com output"
 	task :compile_domain do
 		config '/', '../Le-Torte-di-Chiara-output'
-		puts "\n-->>Compiling domain site..."
+		puts "\n-->> Compiling domain site..."
 		sh 'nanoc3 compile'
 	end
 
