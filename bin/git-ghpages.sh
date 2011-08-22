@@ -1,4 +1,5 @@
 #!/bin/bash
+
 CO=`git checkout gh-pages`
 if [ "$?" -eq "0" ]; then
   rm -rf ./*
