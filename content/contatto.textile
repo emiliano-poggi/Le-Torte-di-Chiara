@@ -1,7 +1,7 @@
 -----
 title: "Come contattarmi"
 -----
-<img class="center" src="/images/confetti.jpg" alt="Le torte di Chiara"/>
+<img class="center" src="../images/confetti.jpg" alt="Le torte di Chiara"/>
 
 p(center). Email: info@letortedichiara.com
 

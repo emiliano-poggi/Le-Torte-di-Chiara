@@ -2,7 +2,7 @@
 title: "Quando la Passione diventa Professione"
 -----
 
-<img class="wrap" src="/images/chiara.jpg" alt="Le torte di Chiara" width="295px" height="320px"/>
+<img class="wrap" src="../images/chiara.jpg" alt="Le torte di Chiara" width="295px" height="320px"/>
 
 Mi chiamo Chiara Pennati e sono una Cake Designer.
 

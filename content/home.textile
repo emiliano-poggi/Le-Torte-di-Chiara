@@ -1,7 +1,7 @@
 -----
 title: "Quando il Design diventa Bontà"
 -----
-<img class="wrap" src="/images/home.jpg" alt="Le torte di Chiara" width="330" height="435"/>
+<img class="wrap" src="../images/home.jpg" alt="Le torte di Chiara" width="330" height="435"/>
 
 Creare qualcosa di speciale per i vostri eventi è la mia soddisfazione più grande.
 
