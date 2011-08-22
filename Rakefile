@@ -11,17 +11,30 @@ namespace :site do
 	end
 
 	# images, com, copy
-	task :compile => [:com,:git]
+	task :update => [:domain,:ghpages]
+	
+	desc "Update master repo and domain"
+	task :domain => [:compile_domain] do
+		# git repo
+		# ftp output copy
+	end
+
+	desc "Update gh-pages repo"
+	task :ghpages => [:compile_ghpages] do
+		# git
+		# cp
+		# git
+	end
 	
 	desc "Generate letortedichiara.com output"
-	task :com do
-		config '/'
+	task :compile_domain do
+		config '/', '../Le-Torte-di-Chiara-output'
 		sh 'nanoc3 compile'
 	end
 
 	desc "Generate empo.github.com/Le-Torte-di-Chiara output"
-	task :git do
-		config '/Le-Torte-di-Chiara/', "../Le-Torte-di-Chiara-output-ghpages"
+	task :compile_ghpages do
+		config '/Le-Torte-di-Chiara/', '../Le-Torte-di-Chiara-output-ghpages'
 		sh 'nanoc3 compile'
 	end
 
