@@ -1,0 +1,4 @@
+open -u letortedichiara -p 21 ftp://195.110.124.133
+mirror -n -R ../Le-Torte-di-Chiara-output/ .
+close
+exit

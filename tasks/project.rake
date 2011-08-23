@@ -11,11 +11,15 @@ namespace :project do
 	task :update => [:domain,:ghpages]
 	
 	#desc "Update master repo and domain"
-	task :domain => [:compile_domain] do
+	task :domain => [:compile_domain, :ftptest] do
 		# import images
 		puts "\n#### UPDATE MASTER ####"
 		sh 'bin/git-domain.sh'
 		# ftp output copy
+	end
+
+	task :ftptest do
+		sh('lftp -f bin/ftp-synch')
 	end
 
 	#desc "Update gh-pages repo"
