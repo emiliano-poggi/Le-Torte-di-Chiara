@@ -1,16 +1,17 @@
 #!/bin/bash
 
-CO=`git checkout gh-pages`
+git checkout gh-pages
 if [ "$?" -eq "0" ]; then
-  rm -rf ./*
-	echo -e "\n-->> Copying files from output gh-pages..."
+	echo -e "\nReplacing files from local gh-pages...\n"
+	rm -rf ./*
 	cp -r ../Le-Torte-di-Chiara-output-ghpages/* ./
 	git status
-	echo -e "\n-->> Synch ghpages..."
+	echo -e "\nCommitting changes...\n"
 	git add .
-  git commit -a -m 'Update project'
-  git push origin gh-pages
-	echo -e "\n-->>Switch to master..."
+  	git commit -a -m 'rake gh-pages:update'
+	echo -e "\nSynchronize gh-pages branch...\n"
+  	git push origin gh-pages
+	echo -e "\nSwitching to master branch..."
 	git checkout master
 	git status
 	exit 0
