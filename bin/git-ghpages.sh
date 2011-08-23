@@ -6,10 +6,10 @@ if [ "$?" -eq "0" ]; then
 	rm -rf ./*
 	cp -r ../Le-Torte-di-Chiara-output-ghpages/* ./
 	git status
-	echo -e "\nCommitting changes...\n"
+	echo -e "\nAdding changes to commit...\n"
 	git add .
   	git commit -a -m 'rake gh-pages:update'
-	echo -e "\nSynchronize gh-pages branch...\n"
+	echo -e "\nCommitting changes to gh-pages branch...\n"
   	git push origin gh-pages
 	echo -e "\nSwitching to master branch..."
 	git checkout master
