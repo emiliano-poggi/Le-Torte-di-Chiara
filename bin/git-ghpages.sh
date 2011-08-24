@@ -9,7 +9,7 @@ if [ "$?" -eq "0" ]; then
 	echo -e "\nAdding changes to commit...\n"
 	git add .
   	git commit -a -m 'rake gh-pages:update'
-	echo -e "\nCommitting changes to gh-pages branch...\n"
+	echo -e "\nCommitting changes on gh-pages branch...\n"
   	git push origin gh-pages
 	echo -e "\nSwitching to master branch..."
 	git checkout master
