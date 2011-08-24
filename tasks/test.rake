@@ -1,5 +1,5 @@
 namespace :test do
-	task :update => ["master:update", "ghpages:update"] do
+	task :update => ["master:update", "ghpages:update", "site:update"] do
 		puts "\n__Project updated!"
 	end
 end
@@ -19,7 +19,7 @@ end
 
 
 namespace :master do
-	task :update => ["site:update", "ghpages:generate"] do
+	task :update => ["site:generate", "ghpages:generate"] do
 		puts "\n__Updating master (git)..."
 		sh 'bin/git-domain.sh'
 	end
