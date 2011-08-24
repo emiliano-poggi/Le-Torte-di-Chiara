@@ -7,7 +7,7 @@ end
 namespace :site do
 	task :update => [:generate] do
 		puts "\n__Updating site (ftp)..."
-		#sh('lftp -f bin/ftp-synch')
+		sh('lftp -f bin/ftp-synch')
 	end
 
 	task :generate do
