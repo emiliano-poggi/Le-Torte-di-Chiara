@@ -12,7 +12,7 @@ h2. What's behind the project
 ** merge (local) gh-page site and commit changes in gh-pages branch, thus updating remote gh-pages site
 ** synchronize via ftp the remote site with the local one.
 * nanoc @config.yaml@ extension (@site_root@), to customize the output site root URL. During the web site generation, all links are automatically built according to the current configured site root.
-* bash scripts (rake invoked) to automate a few shell tasks (check the @bin@ prject folder)
+* bash scripts (rake invoked) to automate a few shell tasks (check the @bin@ project folder)
 
 h2. What's behind the web site
 
