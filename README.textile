@@ -5,14 +5,14 @@ This project repo contains the web site sources used to generate and update the 
 h2. What's behind the project
 
 * "nanoc":http://nanoc.stoneship.org/, to dynamically generate the HTML static web site 
-* nanoc rake extension **project:update**, to automate the following tasks:
-** generate the domain site
-** generate the gh-pages site
+* nanoc `Rake` extension which defaults to **project:update** (see `tasks/project.rake`), to automate the following tasks:
+** generate the (local) site
+** generate the (local) gh-pages site
 ** commit changes to master branch
-** commit changes to gh-pages branch (which automatically will update the gh-pages site)
-** update (ftp) domain site (based on domain site generation).
-* nanoc config extension, to customize the output site root URL. During the web site generation, all links are automatically built according to the current configured site root.
-* bash script (rake invoked) to automate a few shell tasks
+** commit changes to gh-pages branch, which automatically will update the (remote) gh-pages site
+** update via ftp the (remote) site.
+* nanoc `config.yaml` extension (`site_root`), to customize the output site root URL. During the web site generation, all links are automatically built according to the current configured site root.
+* bash scripts (rake invoked) to automate a few shell tasks (check the `bin` folder)
 
 h2. What's behind the web site
 
