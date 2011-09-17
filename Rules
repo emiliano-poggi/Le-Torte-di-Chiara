@@ -11,7 +11,7 @@ end
 
 compile '/*/' do
   filter :erb
-	filter :redcloth
+  filter :redcloth
   layout 'default'
 end
 

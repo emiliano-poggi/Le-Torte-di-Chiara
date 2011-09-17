@@ -1,6 +1,10 @@
 <ul id="navigation-1">
 	<li><a href="<%= @config[:site_root] %>" title="Home">Home</a></li>
-	<li><a href="<%= @config[:site_root] %>me/" title="Un po' di me">Un po' di me</a></li>
+	<li><a href="<%= @config[:site_root] %>me/" title="Un po' di me">Un po' di me</a>
+	<ul class="navigation-2">
+		<li><a href="<%= @config[:site_root] %>diconodime/" title="Cose dicono di me">Dicono di me</a></li>
+	</ul>
+	</li>
 	<li><a href="<%= @config[:site_root] %>" title="Le Gallerie delle mie Creazioni">Le mie Creazioni</a>
 	<ul class="navigation-2">
 		<li><a href="<%= @config[:site_root] %>allestimenti/" title="Galleria degli allestimenti">Allestimenti</a></li>
@@ -14,6 +18,7 @@
 	<ul class="navigation-2">
 		<li><a href="http://blog.letortedichiara.com" title="Blog de Le Torte di Chiara">Il mio Blog</a></li>
 		<li><a href="http://www.facebook.com/pages/Genova-Italy/Le-torte-di-Chiara/67171771103?ref=ts" title="Facebook Fan Page">Facebook Fan Page</a></li>
+		<li><a href="http://www.youtube.com/user/LeTorteDiChiara" title="YouTube Personal Channel">YouTube Channel</a></li>
 	</ul>
 	</li>
 	<li><a href="<%= @config[:site_root] %>contatto/" title="Come contattarmi">Contattami</a></li>
