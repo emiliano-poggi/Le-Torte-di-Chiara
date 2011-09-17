@@ -9,7 +9,7 @@ body {
 {
 	font-style:italic;
 	text-align:center;
-	font-size:22px;
+	font-size:20px;
 	letter-spacing:.2em;
 }
 
@@ -28,4 +28,10 @@ body {
 font-size:10px;
 color:#000000;
 text-align:center;
+}
+
+p.promo {
+	font-size:20px;
+	color:#000000;
+	letter-spacing:.03em;
 }
