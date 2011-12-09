@@ -3,12 +3,7 @@ title: "Quando il Design diventa Bontà"
 -----
 <img class="wrap" src="images/home.jpg" alt="Le torte di Chiara" width="353" height="440"/>
 
-Creare qualcosa di speciale per i vostri eventi è la mia soddisfazione più grande.
-
-Adoro essere spettatrice, pur non essendoci, del momento in cui insieme condividete la torta...
-
-In piccola parte mi sento di aver contribuito a quella grande felicità.					
-
-_Chiara_
-
-p(promo). Non perdere il mio LIBRO "Assaggi di stile"
+Acquista il mio libro __Assaggi di stile__:
+* Ordinalo online cliccando "qui(Vai alla pagina di acquisto)":http://www.marycakedecorating.it/ProdottoDettaglio.aspx?IDProd=494
+* Ordinalo nella tua libreria di fiducia
+* Scrivimi: "info@letortedichiara.com":mailto:info@letortedichiara.com
